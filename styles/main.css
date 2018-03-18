@@ -1,0 +1,59 @@
+/* 
+***********HEADER***********
+*/
+.backImage {
+	background-position-x : 50%;
+	background-position-y : 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url("../images/computer-coffe.jpg");
+	height: 300px;
+	margin-bottom: 20px;
+}
+header h1 {
+	color: white;
+	padding-top: 150px;
+	font-size: 70px;
+}
+/*
+********************ALERT*************
+*/
+div.alertMois {
+    padding: 20px;
+    background-color: #f44336 !important;
+    color: white;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.closebtn:hover {
+    color: black;
+}
+/*
+***************CONTAINEUR**************
+*/
+.mycont {
+	margin-bottom:80px !important;
+}
+/*
+**************TABLE CAPTION************
+*/
+table caption {
+	padding: 40px !important;
+	font-size: 30px !important;
+}
+/*
+**************BUTTON*******************
+*/
+.mybtn {
+	margin-top: 40px !important;
+	margin-bottom: 20px !important;
+}

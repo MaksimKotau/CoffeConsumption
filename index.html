@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Rapports de café</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="styles/main.css">
+		<script src="scripts/main.js"></script>
+	</head>
+	<body>
+		<header class="container backImage">
+			<h1>Café rapports</h1>
+		</header>
+		<div class="container mycont">
+			<form id="formRapport" name="rapportFormulaire" method="POST" action="traiter.php">
+				<div class="panel panel-default">
+					<div class="panel-heading">Sélectionnez le rapport</div>
+					<div class="panel-body">
+						<div class="radio">
+							<label for="toutTable"><input type="radio" name="rapports" value="toutTable" id="toutTable" checked>Afficher le contenu du fichier</label>
+						</div>
+						<div class="radio">
+							<label for="toutConsomParJour">
+							<input type="radio" name="rapports" value="toutConsomParJour" id="toutConsomParJour" data-toggle="collapse" data-target="#collapseOne">
+							Liste de tous les programmeurs qui ont consommé des tasses de café pour une journée donnée</label>
+						</div>
+						<div class="form-group">
+							<select name="jour" id="jour" class="form-control">
+								<option value="Lundi">Lundi</option>
+								<option value="Mardi">Mardi</option>
+								<option value="Mercredi">Mercredi</option>
+								<option value="Jeudi">Jeudi</option>
+								<option value="Vendredi">Vendredi</option>
+							</select>
+						</div>	
+						<div class="radio">
+							<label for="consomMax"><input type="radio" name="rapports" value="consomMax" id="consomMax">Le nom du programmeur
+								qui a consommé le plus de tasses de café</label>
+						</div>
+						<div class="radio">
+							<label for="moyenneParJour"><input type="radio" name="rapports" value="moyenneParJour" id="moyenneParJour">La moyenne
+								de tasses de café consommés par jour de la semaine</label>
+						</div>
+						<div class="radio">
+							<label for="consommationParProgr"><input type="radio" name="rapports" value="consommationParProgr" id="consommationParProgr">Pour
+								un programmeur donné le nombre de tasses consommées</label>
+						</div>
+						<div class="form-group">
+							<select name="nom" id="nom" class="form-control">
+								<option value="Gilbert">Gilbert</option>
+								<option value="Wally">Wally</option>
+								<option value="Edgar">Edgar</option>
+								<option value="Eugene">Eugene</option>
+								<option value="Josephine">Josephine</option>
+								<option value="Clarence">Clarence</option>
+							</select>
+						</div>
+						<div class="radio">
+							<label for="jourDeConsomMoyennePlus"><input type="radio" name="rapports" value="jourDeConsomMoyennePlus" id="jourDeConsomMoyennePlus">Le
+								jour de la semaine qui a la moyenne de consommation la plus élevée</label>
+						</div>
+						<button type="button" class="btn mybtn" onclick="functionSubmit()">Rapport</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="navbar navbar-default navbar-fixed-bottom">
+			<div class="container">
+				<p class="navbar-text pull-left">© 2018 - Kotau Maksim </p>
+			</div>
+		</div>
+	</body>
+</html>
